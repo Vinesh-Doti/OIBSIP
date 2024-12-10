@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f3f4f6, #e0e7ff);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .section {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  header {
+    background: linear-gradient(to right, #3b3054, #5f41d4);
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #63e6e2;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  header nav ul li {
+    font-weight: 600;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #63e6e2;
+  }
+  
+  /* Home Section */
+  #home {
+    text-align: center;
+    background: linear-gradient(to bottom, #6a5acd, #9370db);
+    color: #fff;
+    padding: 5rem 1rem;
+  }
+  
+  #home h2 span {
+    color: #63e6e2;
+  }
+  
+  #home .btn {
+    background: linear-gradient(to right, #63e6e2, #4dabf7);
+    color: #333;
+    padding: 0.7rem 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  #home .btn:hover {
+    background: linear-gradient(to right, #4dabf7, #63e6e2);
+  }
+  
+  /* About Section */
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #63e6e2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-text {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .about-text p {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Skills Section */
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skill {
+    text-align: left;
+  }
+  
+  .skill p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .progress-bar {
+    background: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar .progress {
+    height: 100%;
+    background: linear-gradient(to right, #63e6e2, #4dabf7);
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 0.5rem;
+    line-height: 10px;
+    color: #333;
+    font-size: 0.8rem;
+  }
+  
+  /* Portfolio Section */
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .portfolio-item {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-info {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .portfolio-info h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .portfolio-info p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Contact Section */
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-container form input,
+  .contact-container form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-container form button {
+    background: linear-gradient(to right, #6a5acd, #9370db);
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-container form button:hover {
+    background: linear-gradient(to right, #9370db, #6a5acd);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #3b3054;
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
